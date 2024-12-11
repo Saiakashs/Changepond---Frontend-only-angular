@@ -1,0 +1,8 @@
+<p>childcompoenent works!</p>
+<div>{{pdata}}</div>
+<hr>
+
+<form>
+    <input type="text" name="childinput" #childinfo> <br> <br>
+    <button type="button" (click)="sendData(childinfo.value)">send data</button>
+</form>
