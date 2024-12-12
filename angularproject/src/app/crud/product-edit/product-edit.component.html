@@ -1,0 +1,37 @@
+<p>product-edit works!</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+        
+            <form #pdata="ngForm" (ngSubmit)="editData(pdata.value)" class="box">
+
+                <div>
+                    <label class="form-label" >Enter Product Name:</label>
+                    <input type="text" name="pname" class="form-control" [ngModel]="productData?.pname">
+                </div>
+
+                <div>
+                    <label class="form-label">Enter Product Price:</label>
+                    <input type="text" name="pprice" class="form-control" [ngModel]="productData?.pprice">
+                </div>
+
+                <div>
+                    <label class="form-label">Enter Product Company:</label>
+                    <input type="text"  name="pcompany" class="form-control" [ngModel]="productData?.pcompany">
+                </div>
+
+                <div>
+                    <label class="form-label">Enter Product Quantity</label>
+                    <input type="text" name="pquantity" class="form-control" [ngModel]="productData?.pquantity">
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Add Data</button>
+                
+            </form>
+        </div>
+
+        <div class="col-3"></div>
+
+    </div>
+</div>

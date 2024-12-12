@@ -1,0 +1,53 @@
+
+<p>day1task3 works!</p>
+<div class="container">
+    <button class="btn btn-primary mx-5" (click)="displayData(1)">Bikes</button>
+    <button class="btn btn-primary" (click)="displayData(2)">Cars</button>
+    <div *ngIf="isCond1;then clickcars;else clickbikes"></div>
+    <div>
+        <ng-template #clickbikes>
+            <ul>
+                <li *ngFor="let bike of bikes" (click)="getClickBike(bike)">{{bike}}</li>
+
+            </ul> 
+        </ng-template>
+        <ng-template #clickcars>
+            <ul>
+                <li *ngFor="let car of cars" (click)="getClickCar(car)">{{car}}</li>
+            </ul> 
+        </ng-template>
+    </div>
+
+    
+       
+
+        <div>
+            <div *ngIf="isCond2;then clickcar;else clickbike"></div>
+            <ng-template #clickcar>
+                <div [ngSwitch]="car">
+                    <div *ngFor="let car of cars">
+                        <div *ngSwitchCase="car">You have selected <strong>{{car}}</strong></div>
+                    </div>
+                </div>
+            </ng-template>
+            
+            <ng-template #clickbike>
+                <div [ngSwitch]="bike">
+                    <div *ngFor="let bike of bikes">
+                        <div *ngSwitchCase="bike">You have selected <strong>{{bike}}</strong></div>
+                    </div>
+                </div>
+            </ng-template>
+            
+        </div>   
+    
+    
+
+    <!-- "" -->
+    <!-- '' -->
+</div>
+
+
+
+
+  

@@ -1,0 +1,51 @@
+{
+  "products": [
+    {
+      "pname": "Desktop",
+      "pprice": "45000",
+      "pcompany": "Asus",
+      "pquantity": "10",
+      "id": "101"
+    },
+    {
+      "id": "102",
+      "pname": "Mouse",
+      "pprice": 2000,
+      "pcompany": "Intel",
+      "pquantity": 5
+    },
+    {
+      "id": "103",
+      "pname": "Keyboard",
+      "pprice": 50000,
+      "pcompany": "Dell",
+      "pquantity": 15
+    },
+    {
+      "id": "104",
+      "pname": "Monitor",
+      "pprice": 30000,
+      "pcompany": "HP",
+      "pquantity": 8
+    },
+    {
+      "id": "8d31",
+      "pname": "Hard Drive",
+      "pprice": "10000",
+      "pcompany": "HP",
+      "pquantity": "20"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "userid": "admin@gmail.com",
+      "userpass": "admin@123"
+    },
+    {
+      "id": "2",
+      "userid": "hero@gmail.com",
+      "userpass": "hero@123"
+    }
+  ]
+}
