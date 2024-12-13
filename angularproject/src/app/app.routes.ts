@@ -12,6 +12,7 @@ import { ItemComponent } from './item/item.component';
 import { ProductDashComponent } from './crud/product-dash/product-dash.component';
 import { ProductAddComponent } from './crud/product-add/product-add.component';
 import { ProductEditComponent } from './crud/product-edit/product-edit.component';
+import { authGuard } from './shared/custguard/auth.guard';
 
 export const routes: Routes = [
 
@@ -27,7 +28,7 @@ export const routes: Routes = [
 
     {path:"login",component:LoginComponent},
 
-    {path:"maindashboard",component:MaindashboardComponent,children:[
+    {path:"maindashboard",component:MaindashboardComponent, canActivate:[authGuard], children:[
 
         {path:"productdash",component:ProductDashComponent},
         {path:"productadd",component:ProductAddComponent},

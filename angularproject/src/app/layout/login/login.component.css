@@ -1,0 +1,14 @@
+.main-box{
+    display:flex;
+    height:100vh;
+    width:100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form{
+    border:3px solid skyblue;
+    width:400px;
+    padding: 10px;
+}

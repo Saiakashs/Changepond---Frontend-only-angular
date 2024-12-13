@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -10,4 +10,12 @@ import { RouterLink } from '@angular/router';
 })
 export class NavComponent {
 
+  constructor(public _router:Router){}
+
+  logOut(){
+    window.alert("Logout Successfully");
+    sessionStorage.clear();
+    this._router.navigate(['/']);
+
+  }
 }

@@ -4,6 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "json-server":"cd src/app/shared/database && json-server --watch -p 8888 db.json",
+    "start-dev":"npx concurrently \"ng serve\" \"npm run json-server\"",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
